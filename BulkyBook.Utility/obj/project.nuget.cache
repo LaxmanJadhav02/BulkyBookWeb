@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pdd1wHYjRZ8icuFXihS/gnE+BF8rm394myAmAp1zAQ/K265NVsAQAiB50v6loWnnu4MkG2PhHDNKv4tdo+zbpw==",
+  "dgSpecHash": "p6ZhQ6QVC5T51EYnCy7SLVjKCHpiNfcV3Eq4b8mupAMAlgPTOscuLpD5s5Uguyy1geVj6YhqjXSlbNp436jN/A==",
   "success": true,
-  "projectFilePath": "C:\\Projects 2022\\core\\BulkyBookWebGit\\BulkyBookWeb\\BulkyBook.Utility\\BulkyBook.Utility.csproj",
+  "projectFilePath": "C:\\Projects\\Learning\\BulkyBookWeb\\BulkyBookWeb\\BulkyBook.Utility\\BulkyBook.Utility.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

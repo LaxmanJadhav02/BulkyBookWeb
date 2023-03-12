@@ -34,3 +34,21 @@ C:\Projects 2022\core\BulkyBookWebGit\BulkyBookWeb\BulkyBook.DataAccess\obj\Debu
 C:\Projects 2022\core\BulkyBookWebGit\BulkyBookWeb\BulkyBook.DataAccess\obj\Debug\net5.0\ref\BulkyBook.DataAccess.dll
 C:\Projects 2022\core\BulkyBookWebGit\BulkyBookWeb\BulkyBook.DataAccess\obj\Debug\net5.0\BulkyBook.DataAccess.pdb
 C:\Projects 2022\core\BulkyBookWebGit\BulkyBookWeb\BulkyBook.DataAccess\obj\Debug\net5.0\BulkyBook.DataAccess.genruntimeconfig.cache
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.DataAccess\bin\Debug\net5.0\BulkyBook.DataAccess.deps.json
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.DataAccess\bin\Debug\net5.0\BulkyBook.DataAccess.runtimeconfig.json
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.DataAccess\bin\Debug\net5.0\BulkyBook.DataAccess.runtimeconfig.dev.json
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.DataAccess\bin\Debug\net5.0\BulkyBook.DataAccess.dll
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.DataAccess\bin\Debug\net5.0\ref\BulkyBook.DataAccess.dll
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.DataAccess\bin\Debug\net5.0\BulkyBook.DataAccess.pdb
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.DataAccess\bin\Debug\net5.0\BulkyBook.Models.dll
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.DataAccess\bin\Debug\net5.0\BulkyBook.Models.pdb
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.DataAccess\obj\Debug\net5.0\BulkyBook.DataAccess.csproj.AssemblyReference.cache
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.DataAccess\obj\Debug\net5.0\BulkyBook.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.DataAccess\obj\Debug\net5.0\BulkyBook.DataAccess.AssemblyInfoInputs.cache
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.DataAccess\obj\Debug\net5.0\BulkyBook.DataAccess.AssemblyInfo.cs
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.DataAccess\obj\Debug\net5.0\BulkyBook.DataAccess.csproj.CoreCompileInputs.cache
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.DataAccess\obj\Debug\net5.0\BulkyBook.DataAccess.csproj.CopyComplete
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.DataAccess\obj\Debug\net5.0\BulkyBook.DataAccess.dll
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.DataAccess\obj\Debug\net5.0\ref\BulkyBook.DataAccess.dll
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.DataAccess\obj\Debug\net5.0\BulkyBook.DataAccess.pdb
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.DataAccess\obj\Debug\net5.0\BulkyBook.DataAccess.genruntimeconfig.cache

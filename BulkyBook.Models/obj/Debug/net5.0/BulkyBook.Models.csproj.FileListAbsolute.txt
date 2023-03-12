@@ -22,3 +22,15 @@ C:\Projects 2022\core\BulkyBookWebGit\BulkyBookWeb\BulkyBook.Models\obj\Debug\ne
 C:\Projects 2022\core\BulkyBookWebGit\BulkyBookWeb\BulkyBook.Models\obj\Debug\net5.0\BulkyBook.Models.dll
 C:\Projects 2022\core\BulkyBookWebGit\BulkyBookWeb\BulkyBook.Models\obj\Debug\net5.0\ref\BulkyBook.Models.dll
 C:\Projects 2022\core\BulkyBookWebGit\BulkyBookWeb\BulkyBook.Models\obj\Debug\net5.0\BulkyBook.Models.pdb
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.Models\bin\Debug\net5.0\BulkyBook.Models.deps.json
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.Models\bin\Debug\net5.0\BulkyBook.Models.dll
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.Models\bin\Debug\net5.0\ref\BulkyBook.Models.dll
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.Models\bin\Debug\net5.0\BulkyBook.Models.pdb
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.Models\obj\Debug\net5.0\BulkyBook.Models.csproj.AssemblyReference.cache
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.Models\obj\Debug\net5.0\BulkyBook.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.Models\obj\Debug\net5.0\BulkyBook.Models.AssemblyInfoInputs.cache
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.Models\obj\Debug\net5.0\BulkyBook.Models.AssemblyInfo.cs
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.Models\obj\Debug\net5.0\BulkyBook.Models.csproj.CoreCompileInputs.cache
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.Models\obj\Debug\net5.0\BulkyBook.Models.dll
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.Models\obj\Debug\net5.0\ref\BulkyBook.Models.dll
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBook.Models\obj\Debug\net5.0\BulkyBook.Models.pdb

@@ -58,10 +58,12 @@ namespace BulkyBooks.Controllers
                
                 return View(productVM);
             }
-            else { 
-            //update product
+            else {
+                //update product
+                productVM.product = _IUnitOfWork.Product.GetfirstOrDefault(u => u.Id == Id);
+                return View(productVM);
             }            
-            return View(productVM);
+            
         }
 
         [HttpPost]
@@ -76,16 +78,34 @@ namespace BulkyBooks.Controllers
                     string fileName = Guid.NewGuid().ToString();
                     var Uploads = Path.Combine(wwwrootpath, @"Images\Products");
                     var extension = Path.GetExtension(file.FileName);
+
+                    if (obj.product.ImageUrl != null)
+                    {
+                        var oldImagePath = Path.Combine(wwwrootpath,obj.product.ImageUrl.TrimStart('\\'));
+                        if (System.IO.File.Exists(oldImagePath))
+                        {
+                            System.IO.File.Delete(oldImagePath);
+                        }
+                    }
                     using (var filestrems = new FileStream(Path.Combine(Uploads, fileName + extension), FileMode.Create))
                     {
                         file.CopyTo(filestrems);
                     }
                     obj.product.ImageUrl = @"\Images\Products\" + fileName + extension;
                 }
-                _IUnitOfWork.Product.Add(obj.product);
+                if (obj.product.Id == 0)
+                {
+                    _IUnitOfWork.Product.Add(obj.product);
+                    TempData["success"] = "Product Created succesfully";
+                }
+                else
+                {
+                    _IUnitOfWork.Product.Update(obj.product);
+                    TempData["success"] = "Product Updated succesfully";
+                }
                 _IUnitOfWork.Save();
                
-                TempData["success"] = "Product Created succesfully";
+                
             }
             else
             {
@@ -94,44 +114,33 @@ namespace BulkyBooks.Controllers
             return RedirectToAction("Index");
         }
 
-        [HttpGet]
-        public IActionResult DeleteProduct(int? Id)
-        {
-            if (Id == null || Id == 0)
-            {
-                return NotFound();
-            }
-            var Productdata = _IUnitOfWork.Product.GetfirstOrDefault(u=>u.Id== Id); 
-
-            if (Productdata == null)
-            {
-                return NotFound();
-            }
-            return View(Productdata);
-        }
-
-        [HttpPost]
-        public IActionResult DeleteProduct(Product obj)
-        {
-            if (ModelState.IsValid)
-            {
-                _IUnitOfWork.Product.Remove(obj);
-                _IUnitOfWork.Save();
-                TempData["success"] = "Product deleted succesfully";
-            }
-            else
-            {
-                return View("DeleteProduct", obj);
-            }
-            return RedirectToAction("Index");
-        }
-
         #region API Calls
         [HttpGet]
         public IActionResult GetAll()
         {
-            var Productlist = _IUnitOfWork.Product.Getall();
+            var Productlist = _IUnitOfWork.Product.Getall(includeProperties: "Category,CoverTypes");
             return Json(new { data= Productlist });
+        }
+        [HttpDelete]
+        public IActionResult Delete(int? Id)
+        {
+            var obj = _IUnitOfWork.Product.GetfirstOrDefault(u => u.Id == Id);
+            if (obj == null)
+            {
+                return Json(new { success=false,message="error while deleteing"});
+            }
+            if (obj.ImageUrl != null)
+            {
+                var oldImagePath = Path.Combine(_hostEnvironment.WebRootPath, obj.ImageUrl.TrimStart('\\'));
+                if (System.IO.File.Exists(oldImagePath))
+                {
+                    System.IO.File.Delete(oldImagePath);
+                }
+            }
+            _IUnitOfWork.Product.Remove(obj);
+            _IUnitOfWork.Save();
+            return Json(new { success = true , message = "delete successfull" });
+
         }
         #endregion
 
