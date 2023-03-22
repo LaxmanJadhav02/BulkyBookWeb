@@ -15,6 +15,7 @@ using Microsoft.EntityFrameworkCore.SqlServer;
 using Microsoft.EntityFrameworkCore;
 using BulkyBook.DataAccess.Repository.IRepository;
 using BulkyBook.DataAccess.Repository;
+using Microsoft.AspNetCore.Identity;
 
 namespace BulkyBooks
 {
@@ -34,7 +35,9 @@ namespace BulkyBooks
             services.AddDbContext<ApplicationDBContext>(options => options.UseSqlServer(
                 Configuration.GetConnectionString("DefaultConnection")
                 ));
+            services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<ApplicationDBContext>();//option => option.SignIn.RequireConfirmedAccount = true
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddRazorPages();
         }
 
 
@@ -56,9 +59,9 @@ namespace BulkyBooks
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
-
+            app.UseEndpoints(endpoints=> { endpoints.MapRazorPages(); });
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
