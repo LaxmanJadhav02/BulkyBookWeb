@@ -8,7 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+using BulkyBook.Utility;
 using BulkyBook.DataAccess;
 using BulkyBook.Models;
 using Microsoft.EntityFrameworkCore.SqlServer;
@@ -16,6 +16,7 @@ using Microsoft.EntityFrameworkCore;
 using BulkyBook.DataAccess.Repository.IRepository;
 using BulkyBook.DataAccess.Repository;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 namespace BulkyBooks
 {
@@ -35,9 +36,17 @@ namespace BulkyBooks
             services.AddDbContext<ApplicationDBContext>(options => options.UseSqlServer(
                 Configuration.GetConnectionString("DefaultConnection")
                 ));
-            services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<ApplicationDBContext>();//option => option.SignIn.RequireConfirmedAccount = true
+            services.AddIdentity<IdentityUser,IdentityRole>().AddDefaultTokenProviders()
+                .AddEntityFrameworkStores<ApplicationDBContext>();//option => option.SignIn.RequireConfirmedAccount = true
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddSingleton<IEmailSender,EmailSender>();
             services.AddRazorPages();
+            services.ConfigureApplicationCookie(option=>
+            {
+                option.LoginPath = $"/Identity/Account/Login";
+                option.LoginPath = $"/Identity/Account/Logout";
+                option.AccessDeniedPath = $"/Identity/Account/AccessDenied";
+            });
         }
 
 

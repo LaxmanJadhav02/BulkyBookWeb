@@ -12,7 +12,7 @@ namespace BulkyBook.DataAccess.Repository.IRepository
         //T- category
         T GetfirstOrDefault(Expression<Func<T,bool>> filter,string? includeProperties=null);
 
-        IEnumerable<T> Getall(string? includeProperties = null);
+        IEnumerable<T> Getall(Expression<Func<T, bool>>? filter=null, string? includeProperties = null);
 
         void Add(T entity);
 

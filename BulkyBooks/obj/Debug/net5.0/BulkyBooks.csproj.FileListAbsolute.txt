@@ -1398,3 +1398,6 @@ C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBooks\obj\Debug\net5.0\Razor
 C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBooks\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
 C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBooks\obj\Debug\net5.0\Razor\Areas\Admin\Views\Company\Index.cshtml.g.cs
 C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBooks\obj\Debug\net5.0\Razor\Areas\Admin\Views\Company\Upsert.cshtml.g.cs
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBooks\bin\Debug\net5.0\BulkyBook.Utility.dll
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBooks\bin\Debug\net5.0\BulkyBook.Utility.pdb
+C:\Projects\Learning\BulkyBookWeb\BulkyBookWeb\BulkyBooks\obj\Debug\net5.0\Razor\Areas\Customer\Views\Cart\Index.cshtml.g.cs
